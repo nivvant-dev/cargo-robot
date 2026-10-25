@@ -1,0 +1,8 @@
+# Internal Cargo Unloading Robot — student project site
+# All project and policy pages are public. The error page should not be indexed.
+# After deploying, add the absolute URL of sitemap.xml below:
+# Sitemap: https://your-domain.example/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /404.html

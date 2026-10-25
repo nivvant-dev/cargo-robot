@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; media-src 'self'; upgrade-insecure-requests" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Security Policy | Internal Cargo Unloading Robot</title>
+  <meta name="description" content="Security policy for the Internal Cargo Unloading Robot static project site: protections in place, hosting limits, and how to report a vulnerability responsibly." />
+  <meta name="theme-color" content="#050A14" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="Security Policy | Internal Cargo Unloading Robot" />
+  <meta property="og:description" content="What protects this static site, what is outside our control, and how to report a problem." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js"></script>
+</head>
+
+<body class="legal-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header site-header--compact">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Internal Cargo Unloading Robot — project home">
+        <span class="brand__mark" aria-hidden="true">ICUR</span>
+        <span class="brand__text">
+          <span class="brand__name">Cargo Unloading Robot</span>
+          <span class="brand__sub">NASA HUNCH Project</span>
+        </span>
+      </a>
+      <nav class="legal-nav" aria-label="Project and site policies">
+        <a href="index.html">Project</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html" aria-current="page">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project contact details are filled in; keep this copy in sync with index.html. -->
+  <main id="main" tabindex="-1" class="legal-page">
+    <div class="container">
+      <div class="legal-hero">
+        <p class="eyebrow"><span class="eyebrow__num">POLICY</span>Site information</p>
+        <h1>Security Policy</h1>
+        <p class="legal-meta">Last updated: <time datetime="2026-10-24">October 24, 2026</time> <span>· Website only</span></p>
+        <p class="section-lead">
+          This website is a static page with no accounts, database or uploads. This policy describes the
+          protections that are in place, the parts that depend on the hosting provider, and how to report
+          a security concern responsibly.
+        </p>
+      </div>
+
+      <div class="legal-layout">
+        <aside class="legal-aside">
+          <nav class="legal-toc" aria-label="On this page">
+            <p class="legal-toc__title">On this page</p>
+            <ol>
+              <li><a href="#scope">Scope</a></li>
+              <li><a href="#protections">Protections in place</a></li>
+              <li><a href="#hosting">Hosting limits</a></li>
+              <li><a href="#data">Data &amp; privacy</a></li>
+              <li><a href="#reporting">Reporting a problem</a></li>
+              <li><a href="#out-of-scope">Out of scope</a></li>
+              <li><a href="#robot">The physical robot</a></li>
+              <li><a href="#changes">Updates</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </nav>
+
+          <div class="legal-card">
+            <p class="legal-card__title">Report a security issue</p>
+            <p><a href="mailto:berryda@cfbisd.edu?subject=Security%20report">berryda@cfbisd.edu</a></p>
+            <p>Use the subject “Security” and include the page address and a short description. Please do not test in a way that affects other people.</p>
+          </div>
+        </aside>
+
+        <article class="legal-content">
+          <div class="legal-callout">
+            <p>
+              <strong>Short version:</strong> No logins, no server-side data, no third-party scripts.
+              The site is served over HTTPS with a restrictive Content Security Policy. No website is
+              perfectly secure, and hosting infrastructure is outside our control. Report problems to
+              the team rather than testing them on live users.
+            </p>
+          </div>
+
+          <section id="scope">
+            <h2>1. Scope of this policy</h2>
+            <p>
+              This policy covers the static website at this domain: its HTML, CSS, JavaScript, images and
+              the locally stored trial log. The site has no user accounts, no server-side application, no
+              database, no payment flow and no file uploads. The only interactive data is saved in the
+              visitor's own browser.
+            </p>
+            <p>
+              It does not cover the physical robot, its firmware, electrical system or test procedures.
+              Those are covered by the project safety guidance and the
+              <a href="terms.html">Terms of Use</a>.
+            </p>
+          </section>
+
+          <section id="protections">
+            <h2>2. Protections in place</h2>
+            <div class="table-wrap">
+              <table class="legal-table">
+                <caption class="sr-only">Security measures and their purpose</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Measure</th>
+                    <th scope="col">What it does</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">HTTPS</th>
+                    <td>The site is served over an encrypted connection by the hosting provider. Mixed insecure content is not used.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Content Security Policy</th>
+                    <td>A restrictive policy limits scripts, styles, images and fonts to the site itself, blocks framing and plugins, disables <code>base-uri</code> overrides and disallows outbound connections. This reduces the impact of an injected script.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">No third-party code</th>
+                    <td>No analytics, advertising, trackers, remote fonts, CDN scripts, embedded players or social widgets. Every script and style is a local file that can be reviewed.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">No secrets in the site</th>
+                    <td>The project contains no API keys, passwords, tokens or private configuration. Nothing in the browser can be used to reach a backend, because there is no backend.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Safe rendering</th>
+                    <td>User-entered trial notes are inserted as text, not HTML, and bill-of-materials text is escaped. A note cannot become executable markup in another visitor's browser.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Local-only data</th>
+                    <td>Trials are stored with <code>localStorage</code>. They are not transmitted, and the site does not read data from other origins.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Privacy defaults</th>
+                    <td>No cookies, no account sessions, no cross-site tracking. The referrer is limited to the origin for cross-origin requests.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Host security headers</th>
+                    <td>A <code>_headers</code> file adds clickjacking, MIME-sniffing and referrer protections on hosts that support it (Netlify and Cloudflare Pages do).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              These measures reduce risk; they do not make the site immune to every attack. A static site
+              can still be affected by a compromised host, a compromised device, a browser vulnerability
+              or a typo-squatted domain.
+            </p>
+          </section>
+
+          <section id="hosting">
+            <h2>3. Hosting and limits of our control</h2>
+            <p>
+              The site is hosted by a third-party static hosting provider. The provider controls TLS,
+              edge servers, DNS, access logs and the physical infrastructure. Its own security program and
+              incident process apply. The team cannot guarantee the provider's availability, patching or
+              logging, and is not responsible for outages or breaches originating in that infrastructure.
+            </p>
+            <p>
+              Standard security headers are supplied in <code>_headers</code> for hosts that read it.
+              <strong>GitHub Pages does not apply custom response headers</strong> from that file, so on
+              GitHub Pages the browser-enforced protections come from the CSP meta tag in each page and
+              from GitHub's own platform defaults. If header-level protections are important to you,
+              deploy to Netlify or Cloudflare Pages instead. No configuration can promise a perfect
+              security score; scanner grades are not a guarantee.
+            </p>
+          </section>
+
+          <section id="data">
+            <h2>4. Data and privacy</h2>
+            <p>
+              The site does not collect personal information on a server. Trial data stays in your
+              browser and can be cleared with <strong>Clear all trials</strong>. Emails you choose to
+              send go to a school or mentor mailbox, not to a site database.
+            </p>
+            <p>
+              For the full picture, including hosting logs, see the
+              <a href="privacy.html">Privacy Policy</a>. Do not put passwords, private keys or other
+              sensitive information into trial notes or into an email to the team.
+            </p>
+          </section>
+
+          <section id="reporting">
+            <h2>5. Reporting a security problem</h2>
+            <p>
+              If you believe you have found a security issue, please email
+              <a href="mailto:berryda@cfbisd.edu?subject=Security%20report">berryda@cfbisd.edu</a> with the
+              subject “Security”. Include:
+            </p>
+            <ul>
+              <li>the page address or file involved;</li>
+              <li>a short description of the issue and its possible impact;</li>
+              <li>steps to reproduce it, with screenshots or a minimal example if useful;</li>
+              <li>how we can contact you for follow-up.</li>
+            </ul>
+            <p>
+              Please act in good faith: do not access, change or delete other people's data, do not
+              disrupt the site or host, and do not use social engineering against the team, school or
+              provider. Give us a reasonable chance to investigate and fix the issue before publishing
+              details.
+            </p>
+            <p>
+              This is a student project and we do not offer a bug bounty or payment. We will acknowledge
+              reports when we can during the school term, may ask the school or hosting provider for
+              help, and will credit reporters if they would like. The team's intention is not to pursue
+              action against research conducted responsibly under this policy; this does not override the
+              school's or host's own rights or legal obligations.
+            </p>
+          </section>
+
+          <section id="out-of-scope">
+            <h2>6. Out of scope</h2>
+            <p>The following are not vulnerabilities in this site:</p>
+            <ul>
+              <li>the theoretical compromise of the hosting provider, DNS or a visitor's device;</li>
+              <li>missing headers or settings that the chosen host does not support;</li>
+              <li>automated scanner findings without a demonstrated impact;</li>
+              <li>spam, phishing or social-engineering messages that do not involve the site;</li>
+              <li>the absence of a login, database or payment system (there is intentionally none);</li>
+              <li>issues in the physical robot or its firmware, which are outside this website policy.</li>
+            </ul>
+            <p>
+              If you are unsure whether something is in scope, ask first instead of testing it.
+            </p>
+          </section>
+
+          <section id="robot">
+            <h2>7. The physical robot is a separate safety matter</h2>
+            <p>
+              This policy covers the website only. The prototype includes motors, a lifting mechanism,
+              sharp edges and electrical power. Follow the project's safety section, use an emergency
+              stop, keep hands clear of moving parts, and have a teacher or mentor supervise powered
+              tests. See the <a href="terms.html#safety">safety disclaimer</a>.
+            </p>
+          </section>
+
+          <section id="changes">
+            <h2>8. Updates to this policy</h2>
+            <p>
+              We may revise this policy as the site or its hosting changes. The date at the top of the
+              page is the current version. Material changes will be described here rather than silently
+              replacing the page.
+            </p>
+          </section>
+
+          <section id="contact">
+            <h2>9. Contact</h2>
+            <p>
+              <strong>Ranchview HUNCH Team</strong><br />
+              Ranchview High School<br />
+              Mentor: David Berry<br />
+              <a href="mailto:berryda@cfbisd.edu">berryda@cfbisd.edu</a>
+            </p>
+          </section>
+
+          <nav class="legal-actions" aria-label="Related pages">
+            <a class="btn btn--ghost btn--small" href="index.html">← Back to the project</a>
+            <a class="btn btn--ghost btn--small" href="privacy.html">Privacy policy</a>
+            <a class="btn btn--ghost btn--small" href="terms.html">Terms of use</a>
+            <a class="btn btn--ghost btn--small" href="#main">Back to top ↑</a>
+          </nav>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    <div class="container">
+      <nav class="legal-nav" aria-label="Site policies">
+        <a href="privacy.html">Privacy</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html" aria-current="page">Security</a>
+      </nav>
+      <p class="legal-footer__note">
+        © <span id="year">2026</span> Ranchview HUNCH Team. Student project for the NASA HUNCH program.
+        Not affiliated with, reviewed by, or endorsed by NASA. NASA and HUNCH are named only to identify
+        the educational program. See the <a href="terms.html">Terms of Use</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

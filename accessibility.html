@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; media-src 'self'; upgrade-insecure-requests" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Accessibility Statement | Internal Cargo Unloading Robot</title>
+  <meta name="description" content="Accessibility statement for the Internal Cargo Unloading Robot student project site: WCAG 2.2 AA goals, keyboard support, known limitations and how to give feedback." />
+  <meta name="theme-color" content="#050A14" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="Accessibility Statement | Internal Cargo Unloading Robot" />
+  <meta property="og:description" content="Our accessibility goals, what we tested, known limitations and how to reach us." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js"></script>
+</head>
+
+<body class="legal-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header site-header--compact">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Internal Cargo Unloading Robot — project home">
+        <span class="brand__mark" aria-hidden="true">ICUR</span>
+        <span class="brand__text">
+          <span class="brand__name">Cargo Unloading Robot</span>
+          <span class="brand__sub">NASA HUNCH Project</span>
+        </span>
+      </a>
+      <nav class="legal-nav" aria-label="Project and site policies">
+        <a href="index.html">Project</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="accessibility.html" aria-current="page">Accessibility</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project contact details are filled in; keep this copy in sync with index.html. -->
+  <main id="main" tabindex="-1" class="legal-page">
+    <div class="container">
+      <div class="legal-hero">
+        <p class="eyebrow"><span class="eyebrow__num">POLICY</span>Site information</p>
+        <h1>Accessibility Statement</h1>
+        <p class="legal-meta">Last updated: <time datetime="2026-10-24">October 24, 2026</time> <span>· Self-assessed</span></p>
+        <p class="section-lead">
+          This project should be usable by reviewers, students, teachers and visitors with a wide range
+          of abilities and devices. This page explains what we have done, where the site still falls
+          short, and how to tell us about a problem.
+        </p>
+      </div>
+
+      <div class="legal-layout">
+        <aside class="legal-aside">
+          <nav class="legal-toc" aria-label="On this page">
+            <p class="legal-toc__title">On this page</p>
+            <ol>
+              <li><a href="#commitment">Our commitment</a></li>
+              <li><a href="#conformance">Conformance status</a></li>
+              <li><a href="#measures">What we have done</a></li>
+              <li><a href="#limitations">Known limitations</a></li>
+              <li><a href="#feedback">Feedback</a></li>
+              <li><a href="#assessment">How we tested</a></li>
+              <li><a href="#compatibility">Compatibility</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </nav>
+
+          <div class="legal-card">
+            <p class="legal-card__title">Accessibility contact</p>
+            <p>Ranchview HUNCH Team<br />Ranchview High School<br /><a href="mailto:berryda@cfbisd.edu">berryda@cfbisd.edu</a></p>
+            <p>Tell us the page, what happened, and any assistive technology you use. We welcome feedback.</p>
+          </div>
+        </aside>
+
+        <article class="legal-content">
+          <div class="legal-callout">
+            <p>
+              <strong>Short version:</strong> The site is built with WCAG 2.2 Level AA in mind, keyboard
+              access and reduced motion, and has been checked by hand. It has not been independently
+              audited. Known gaps are listed below, and we want to hear about anything we missed.
+            </p>
+          </div>
+
+          <section id="commitment">
+            <h2>1. Our commitment</h2>
+            <p>
+              The Internal Cargo Unloading Robot is a student project for the NASA HUNCH program. We want
+              the project story, design data, build steps, bill of materials and safety guidance to be
+              available to everyone, including people who use a keyboard, a screen reader, a screen
+              magnifier, voice control or a phone.
+            </p>
+            <p>
+              Accessibility is treated as part of the build, not an afterthought: the page uses semantic
+              HTML, visible focus, text alternatives and responsive layout, and the interactive parts
+              were exercised with the keyboard as well as the mouse.
+            </p>
+          </section>
+
+          <section id="conformance">
+            <h2>2. Conformance status</h2>
+            <p>
+              This website is <strong>designed to meet the Web Content Accessibility Guidelines
+              (WCAG) 2.2 Level AA</strong>. It has been self-assessed rather than certified or
+              independently audited. We do not claim formal conformance, and we list the areas we know
+              need work instead of overstating the result.
+            </p>
+            <p>
+              WCAG is published by the W3C. The guidelines explain how to make web content more
+              accessible to people with disabilities:
+              <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="noopener noreferrer">W3C WCAG overview</a>.
+            </p>
+          </section>
+
+          <section id="measures">
+            <h2>3. What we have done</h2>
+
+            <div class="table-wrap">
+              <table class="legal-table">
+                <caption class="sr-only">Accessibility measures by area</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Area</th>
+                    <th scope="col">Measure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Structure</th>
+                    <td>Semantic landmarks (<code>header</code>, <code>nav</code>, <code>main</code>, <code>footer</code>), one page <code>h1</code>, ordered headings, a skip link, descriptive page titles and language set to English.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Keyboard</th>
+                    <td>All controls are reachable by keyboard with a visible focus ring. The mobile menu closes with Escape, the accordion uses native buttons, and the image lightbox traps focus, closes with Escape and returns focus to the image that opened it.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Images</th>
+                    <td>Every project image has descriptive alt text; decorative graphics are hidden from assistive technology. Captions explain what each diagram shows.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Charts &amp; tables</th>
+                    <td>The trial chart has a text summary and an accessible name. The trial table contains the same data, so nothing is available only as a picture of a chart.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Colour &amp; contrast</th>
+                    <td>Body text and controls meet contrast targets on the dark background. Results and states use text labels as well as colour, so success and failure do not rely on green or red alone.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Motion</th>
+                    <td>The demo sequence does not auto-play when your system requests reduced motion. It can be paused, stepped or replayed at any time. Other animations are short and non-essential.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Forms</th>
+                    <td>The trial form has visible labels, sensible input types, an inline error message with <code>role="alert"</code>, <code>aria-describedby</code> links on the fields, <code>aria-invalid</code> on the field that needs attention, and focus moved to that field. Success is announced politely.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zoom &amp; reflow</th>
+                    <td>Layouts reflow at phone widths and remain usable when text is enlarged. Content does not require horizontal scrolling at 320 CSS pixels, apart from wide data tables that can scroll inside their own container.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Privacy by design</th>
+                    <td>No third-party scripts, analytics, ads, embedded players or tracking cookies. There are no pop-ups, interstitials or timed warnings.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="limitations">
+            <h2>4. Known limitations</h2>
+            <p>We would rather be honest than claim perfection. These are the current gaps:</p>
+            <ul>
+              <li>
+                <strong>Source diagrams are low resolution.</strong> The supplied images are small
+                screenshots. Their captions and the surrounding text carry the important information;
+                higher-resolution originals can be supplied on request.
+              </li>
+              <li>
+                <strong>Some features need JavaScript.</strong> The bill of materials filter, demo
+                stepper and trial log are interactive. The main project narrative, design summary,
+                images, safety notes and build steps still work without it, but the BOM tables and test
+                log will not populate. Contact us for a plain-text BOM if you need one.
+              </li>
+              <li>
+                <strong>The chart is drawn on a canvas.</strong> Screen readers get the summary figures
+                and the full trial table instead. The canvas itself is marked as an image with a
+                description and is not the only source of any result.
+              </li>
+              <li>
+                <strong>The site is in English only.</strong> We have not provided translations or a
+                language switcher.
+              </li>
+              <li>
+                <strong>No independent audit.</strong> Testing was done by the team with browser tools
+                and keyboard checks. It did not include a full screen-reader audit across every
+                browser/assistive-technology combination.
+              </li>
+              <li>
+                <strong>External links are outside our control.</strong> The hosting providers' privacy
+                pages and other linked resources may have their own accessibility issues.
+              </li>
+            </ul>
+          </section>
+
+          <section id="feedback">
+            <h2>5. Feedback and alternative formats</h2>
+            <p>
+              If any part of this site is hard to use, please tell us. Helpful details include the page
+              address, what you were trying to do, what happened, and the browser or assistive
+              technology you use. We will try to fix the issue or provide the information in another
+              format, such as plain text, a larger-print version or a description read aloud.
+            </p>
+            <p>
+              Email <a href="mailto:berryda@cfbisd.edu">berryda@cfbisd.edu</a> with the subject
+              “Accessibility”. If email is difficult, ask your teacher or mentor to pass the message to
+              the team. We aim to acknowledge feedback during the school term, though this is a student
+              project and response times may vary around exams and holidays.
+            </p>
+            <p>
+              Please do not include sensitive personal information in an accessibility report. The page
+              address and a description of the barrier are enough.
+            </p>
+          </section>
+
+          <section id="assessment">
+            <h2>6. How this statement was prepared</h2>
+            <p>
+              This statement was prepared by the project team on
+              <time datetime="2026-10-24">October 24, 2026</time>. The site was reviewed by hand at
+              desktop, tablet and phone widths, using the browser's accessibility tree, keyboard-only
+              navigation and focus checks. Automated checks were used as a supplement, not as proof of
+              conformance.
+            </p>
+            <p>
+              The review covered the home page and the policy pages. It included the mobile navigation,
+              accordion, image lightbox, bill of materials filters, demo stepper and the trial log. We
+              will update this statement if the site changes or if new issues are found.
+            </p>
+          </section>
+
+          <section id="compatibility">
+            <h2>7. Technical compatibility</h2>
+            <p>
+              The site is intended for current versions of Chrome, Edge, Firefox and Safari on desktop
+              and mobile. It uses standard HTML, CSS and JavaScript, including
+              <code>&lt;dialog&gt;</code> and <code>inert</code> for the lightbox; very old browsers may
+              not support every interactive feature, but the written content remains available.
+            </p>
+            <p>
+              The site is designed to work without a mouse, at enlarged text sizes, and with the
+              operating system's reduced-motion and forced-colours settings. Keyboard navigation and
+              reduced-motion behaviour were checked, and forced-colours fallbacks are included for the
+              gradient title and policy navigation. If your browser or device behaves differently,
+              please let us know so we can investigate.
+            </p>
+          </section>
+
+          <section id="contact">
+            <h2>8. Contact</h2>
+            <p>
+              <strong>Ranchview HUNCH Team</strong><br />
+              Ranchview High School<br />
+              Mentor: David Berry<br />
+              <a href="mailto:berryda@cfbisd.edu">berryda@cfbisd.edu</a>
+            </p>
+          </section>
+
+          <nav class="legal-actions" aria-label="Related pages">
+            <a class="btn btn--ghost btn--small" href="index.html">← Back to the project</a>
+            <a class="btn btn--ghost btn--small" href="privacy.html">Privacy policy</a>
+            <a class="btn btn--ghost btn--small" href="terms.html">Terms of use</a>
+            <a class="btn btn--ghost btn--small" href="#main">Back to top ↑</a>
+          </nav>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    <div class="container">
+      <nav class="legal-nav" aria-label="Site policies">
+        <a href="privacy.html">Privacy</a>
+        <a href="accessibility.html" aria-current="page">Accessibility</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html">Security</a>
+      </nav>
+      <p class="legal-footer__note">
+        © <span id="year">2026</span> Ranchview HUNCH Team. Student project for the NASA HUNCH program.
+        Not affiliated with, reviewed by, or endorsed by NASA. NASA and HUNCH are named only to identify
+        the educational program. See the <a href="terms.html">Terms of Use</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
